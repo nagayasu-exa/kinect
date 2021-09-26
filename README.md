@@ -45,13 +45,14 @@ k4arecorder
 git clone https://github.com/microsoft/Azure-Kinect-Sensor-SDK
 ```
 #### Build
-- Install if required
+- Install if required or see building.md (https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/develop/docs/building.md)
 ```
 sudo apt install ninja-buid
 sudo apt-get install libssl-dev
 sudo apt-get install libxinerama-dev
 sudo apt-get install libxcursor-dev
 sudo apt install libsoundio-dev
+sudo apt-get install libudev-dev libusb-1.0.0-dev
 ```
 - Build with ninja
 ```
