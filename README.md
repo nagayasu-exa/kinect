@@ -48,8 +48,34 @@ k4arecorder
 git clone https://github.com/microsoft/Azure-Kinect-Sensor-SDK
 ```
 #### Build
-```
-git clone https://github.com/microsoft/Azure-Kinect-Sensor-SDK
-```
+0. Install ninja
+    ```
+    sudo apt install ninja-build    ```
+2. Create a folder named "build" in the root of the git repo and cd into that
+    directory.
+
+    ```
+    mkdir build
+    cd build
+    ```
+
+2. Run CMake from that directory. The preferred build is ninja. All other
+    generators are untested.
+    
+    Release Build:
+    ```
+    cmake .. -GNinja
+    ```
+    Debug Build:
+    ```
+    cmake .. -GNinja -DCMAKE_BUILD_TYPE=Debug
+    ```
+
+3. Run the build (ninja).
+
+    ```
+    ninja
+    ```
+
 
 
