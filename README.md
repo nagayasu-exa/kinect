@@ -27,12 +27,9 @@ git clone https://github.com/microsoft/Azure-Kinect-Sensor-SDK
 ```
 #### Linux Device Setup
 On Linux, once attached, the device should automatically enumerate and load all drivers. However, in order to use the Azure Kinect SDK with the device and without being 'root', you will need to setup udev rules. We have these rules checked into this repo under 'scripts/99-k4a.rules'. To do so:
-
-Copy 'scripts/99-k4a.rules' into '/etc/udev/rules.d/'.
-
-Detach and reattach Azure Kinect devices if attached during this process.
-
-Once complete, the Azure Kinect camera is available without being 'root'.
+- Copy 'scripts/99-k4a.rules' into '/etc/udev/rules.d/'.
+- Detach and reattach Azure Kinect devices if attached during this process.
+- Once complete, the Azure Kinect camera is available without being 'root'.
 
 #### Use Azure Kinect viewer
 ```
@@ -48,27 +45,23 @@ k4arecorder
 git clone https://github.com/microsoft/Azure-Kinect-Sensor-SDK
 ```
 #### Build
-Install if required
+- Install if required
 ```
 sudo apt install ninja-buid
 sudo apt-get install libssl-dev
 sudo apt-get install libxinerama-dev
 ```
-Build with ninja
-
+- Build with ninja
 ```
 mkdir build
 cd build
 cmake .. -GNinja
 ```
-Debug Build:
-
+- Debug Build:
 ```
 cmake .. -GNinja -DCMAKE_BUILD_TYPE=Debug
 ```
-
-Run the build (ninja).
-
+- Run the build (ninja).
 ```
 ninja
 ```
