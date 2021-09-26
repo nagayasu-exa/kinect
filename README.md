@@ -50,6 +50,8 @@ git clone https://github.com/microsoft/Azure-Kinect-Sensor-SDK
 sudo apt install ninja-buid
 sudo apt-get install libssl-dev
 sudo apt-get install libxinerama-dev
+sudo apt-get install libxcursor-dev
+sudo apt install libsoundio-dev
 ```
 - Build with ninja
 ```
