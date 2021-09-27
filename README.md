@@ -7,7 +7,7 @@ https://docs.microsoft.com/ja-jp/azure/kinect-dk/set-up-azure-kinect-dk
 ### Download SDK
 https://docs.microsoft.com/ja-jp/azure/kinect-dk/sensor-sdk-download
 
-## Installation
+## Installation Azure-Kinect-Sensor-SDK
 ### Install device to Linux
 ```
 sudo apt install k4a-tools
@@ -39,7 +39,7 @@ k4aviewer
 ```
 k4arecorder
 ```
-### Azure-Kinect-Sensor-SDK
+### Building own Azure-Kinect-Sensor-SDK
 #### Clone Azure-Kinect-Sensor-SDK git repository
 ```
 git clone https://github.com/microsoft/Azure-Kinect-Sensor-SDK
