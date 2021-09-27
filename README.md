@@ -56,6 +56,7 @@ sudo apt-get install libudev-dev libusb-1.0.0-dev
 ```
 - Build with ninja
 ```
+cd Azure-Kinect-Sensor-SDK
 mkdir build
 cd build
 cmake .. -GNinja
@@ -71,6 +72,7 @@ ninja
 #### Insatall libdepthengine.so and libdepthengine.so.2.0
 https://note.com/blkcatman/n/n49059b8b0b36
 ```
+cd Azure-Kinect-Sensor-SDK
 mkdir packages
 cd packages
 wget https://www.nuget.org/api/v2/package/Microsoft.Azure.Kinect.Sensor/1.4.0-alpha.4
