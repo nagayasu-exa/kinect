@@ -68,6 +68,16 @@ cmake .. -GNinja -DCMAKE_BUILD_TYPE=Debug
 ```
 ninja
 ```
-
-
+#### Insatall libdepthengine.so and libdepthengine.so.2.0
+https://note.com/blkcatman/n/n49059b8b0b36
+```
+mkdir packages
+cd packages
+wget https://www.nuget.org/api/v2/package/Microsoft.Azure.Kinect.Sensor/1.4.0-alpha.4
+mv 1.4.0-alpha.4 1.4.0-alpha.4.zip
+unzip 1.4.0-alpha.4.zip
+cd linux/lib/native/arm64/release/
+cp libdepthengine.so /lib/aarch64-linux-gnu/
+cp libdepthengine.so.2.0 /lib/aarch64-linux-gnu/
+```
 
