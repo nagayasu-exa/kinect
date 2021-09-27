@@ -83,3 +83,14 @@ cp libdepthengine.so /lib/aarch64-linux-gnu/
 cp libdepthengine.so.2.0 /lib/aarch64-linux-gnu/
 ```
 
+```
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/multiarch/prod
+curl -sSL https://packages.microsoft.com/config/ubuntu/18.04/multiarch/prod.list | sudo tee /etc/apt/sources.list.d/microsoft-prod.list
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+sudo apt-get update
+sudo apt install libk4a1.3-dev
+sudo apt install libk4abt1.0-dev
+sudo apt install k4a-tools=1.3.0=
+```
+
