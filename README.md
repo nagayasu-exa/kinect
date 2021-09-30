@@ -47,7 +47,7 @@ git clone https://github.com/microsoft/Azure-Kinect-Sensor-SDK
 #### Build
 - Install if required or see building.md (https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/develop/docs/building.md)
 ```
-sudo apt install ninja-buid
+sudo apt install ninja-build
 sudo apt-get install libssl-dev
 sudo apt-get install libxinerama-dev
 sudo apt-get install libxcursor-dev
