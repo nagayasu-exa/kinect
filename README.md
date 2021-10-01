@@ -82,7 +82,9 @@ cd linux/lib/native/arm64/release/
 cp libdepthengine.so /lib/aarch64-linux-gnu/
 cp libdepthengine.so.2.0 /lib/aarch64-linux-gnu/
 ```
-
+Caution
+- k4a-tools binary distribution installs libk4a1.4 which is incompatible with libk4abt1.0-dev
+- to install libk4abt, k4a-tools need to be re-installed with 1.3.0 version specified
 ```
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/multiarch/prod
@@ -91,6 +93,6 @@ curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 sudo apt-get update
 sudo apt install libk4a1.3-dev
 sudo apt install libk4abt1.0-dev
-sudo apt install k4a-tools=1.3.0=
+sudo apt install k4a-tools=1.3.0
 ```
 
