@@ -97,10 +97,34 @@ sudo apt install k4a-tools=1.3.0
 ```
 
 ### Building Azure-Kinect-Samples/body-tracking-samples
+
+
+- cloned repo https://github.com/microsoft/Azure-Kinect-Samples
+followed instructions on this link: https://docs.microsoft.com/en-us/windows-server/administration/linux-package-repository-for-microsoft-software
+```
+apt install libk4abt0.9-dev
+apt install libxi-dev
+installed vcpckg
+installed libigl[glfw] (and glfw3)
+Changed to git project root
+mkdir build
+cd build
+cmake .. -GNinja
+```
+
+
 ```
 sudo apt-get update
 sudo apt-get install libglfw3
 sudo apt-get install libglfw3-dev
 
 git submodule update --init --recursive
+```
+
+-install vcpkg
+```
+cd /opt
+git clone https://github.com/microsoft/vcpkg
+sudo chown -hR charmie11:charmie11 ./vcpkg
+./vcpkg/bootstrap-vcpkg.sh
 ```
