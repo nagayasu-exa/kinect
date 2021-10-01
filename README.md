@@ -96,3 +96,7 @@ sudo apt install libk4abt1.0-dev
 sudo apt install k4a-tools=1.3.0
 ```
 
+### Building Azure-Kinect-Samples/body-tracking-samples
+```
+sudo apt install -y libglfw3 libglfw3-dev
+```
