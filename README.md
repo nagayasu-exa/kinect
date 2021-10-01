@@ -101,4 +101,6 @@ sudo apt install k4a-tools=1.3.0
 sudo apt-get update
 sudo apt-get install libglfw3
 sudo apt-get install libglfw3-dev
+
+git submodule update --init --recursive
 ```
