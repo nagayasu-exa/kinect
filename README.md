@@ -113,7 +113,7 @@ sudo apt-get install libglfw3-dev
 ```
 cd /opt
 git clone https://github.com/microsoft/vcpkg
-sudo chown -hR charmie11:charmie11 ./vcpkg
+sudo chown -hR user_name:user_name ./vcpkg
 ./vcpkg/bootstrap-vcpkg.sh
 ```
 - Changed to git project root
