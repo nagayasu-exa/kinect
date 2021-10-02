@@ -102,14 +102,13 @@ sudo apt install k4a-tools=1.3.0
 git clone https://github.com/microsoft/Azure-Kinect-Samples
 git submodule update --init --recursive
 ```
-- follow instructions on this link:
--  https://docs.microsoft.com/en-us/windows-server/administration/linux-package-repository-for-microsoft-software
+- follow instructions on this link: https://docs.microsoft.com/en-us/windows-server/administration/linux-package-repository-for-microsoft-software
 ```
 apt install libk4abt0.9-dev
 apt install libxi-dev
 sudo apt-get install libglfw3-dev
 ```
--install vcpkg
+- install vcpkg
 ```
 cd /opt
 git clone https://github.com/microsoft/vcpkg
