@@ -126,8 +126,8 @@ git submodule update --init --recursive
 ```
 - follow instructions on this link: https://docs.microsoft.com/en-us/windows-server/administration/linux-package-repository-for-microsoft-software
 ```
-apt install libk4abt0.9-dev
-apt install libxi-dev
+sudo apt install libk4abt0.9-dev
+sudo apt install libxi-dev
 sudo apt-get install libglfw3-dev
 ```
 - install vcpkg
