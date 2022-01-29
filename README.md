@@ -19,7 +19,7 @@ https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/develop/docs/usage.md#
 #### For Intel architecture
 ```
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/multiarch/prod
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/prod
 sudo apt-get update
 ```
 if following error is encountered, you need specify the architecture of the repository to [arch=amd64]:
