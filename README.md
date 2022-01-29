@@ -76,10 +76,6 @@ Run the apps
 ```
 k4abt_simple_3d_viewer
 ```
-#### Clone Azure-Kinect-Sensor-SDK git repository
-```
-git clone https://github.com/microsoft/Azure-Kinect-Sensor-SDK
-```
 ### Building own Azure-Kinect-Sensor-SDK
 #### Clone Azure-Kinect-Sensor-SDK git repository
 ```
