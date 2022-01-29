@@ -61,6 +61,25 @@ k4aviewer
 ```
 k4arecorder
 ```
+### Install Body Tracking SDK
+Remove the 1.4 SDK.
+```
+sudo apt remove k4a-tools
+sudo apt remove libk4a1.4
+sudo apt remove libk4a1.4-dev
+```
+Install the 1.3 Sensor and Body Tracking SDKs.
+```
+sudo apt install k4a-tools=1.3.0 k4a1.3-dev k4abt1.0 k4abt1.0-dev
+```
+Run the apps
+```
+k4abt_simple_3d_viewer
+```
+#### Clone Azure-Kinect-Sensor-SDK git repository
+```
+git clone https://github.com/microsoft/Azure-Kinect-Sensor-SDK
+```
 ### Building own Azure-Kinect-Sensor-SDK
 #### Clone Azure-Kinect-Sensor-SDK git repository
 ```
