@@ -16,6 +16,28 @@ sudo apt install k4a-tools
 https://docs.microsoft.com/ja-jp/windows-server/administration/linux-package-repository-for-microsoft-software
 https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/develop/docs/usage.md#linux-device-setup
 
+#### For Intel architecture
+```
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/multiarch/prod
+sudo apt-get update
+```
+if following error is encountered, you need specify the architecture of the repository to [arch=amd64]:
+```
+update: N: Skipping acquire of configured file 'main/binary-i386/Packages' as repository 'https://packages.microsoft.com/ubuntu/18.04/prod' doesn't support support architecture 'i386'.
+```
+Modify etc/apt/sources.list. At the bottom of the file, change from:
+```
+deb https://packages.microsoft.com/ubuntu/18.04/prod bionic main
+# deb-src https://packages.microsoft.com/ubuntu/18.04/prod bionic main
+```
+to:
+```
+deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
+# deb-src [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
+```
+
+#### For ARM architecture
 ```
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/multiarch/prod
