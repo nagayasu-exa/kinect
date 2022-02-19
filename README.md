@@ -8,10 +8,7 @@ https://docs.microsoft.com/ja-jp/azure/kinect-dk/set-up-azure-kinect-dk
 https://docs.microsoft.com/ja-jp/azure/kinect-dk/sensor-sdk-download
 
 ## Installation Azure-Kinect-Sensor-SDK
-### Install device to Linux
-```
-sudo apt install k4a-tools
-```
+
 ### Configure Linux repository
 https://docs.microsoft.com/ja-jp/windows-server/administration/linux-package-repository-for-microsoft-software
 https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/develop/docs/usage.md#linux-device-setup
@@ -20,7 +17,6 @@ https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/develop/docs/usage.md#
 ```
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/prod
-sudo apt-get update
 ```
 if following error is encountered, you need specify the architecture of the repository to [arch=amd64]:
 ```
@@ -36,12 +32,19 @@ to:
 deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
 # deb-src [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
 ```
-
+Then
+```
+sudo apt-get update
+```
 #### For ARM architecture
 ```
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/multiarch/prod
 sudo apt-get update
+```
+### Install device to Linux
+```
+sudo apt install k4a-tools
 ```
 #### Clone Azure-Kinect-Sensor-SDK git repository
 ```
